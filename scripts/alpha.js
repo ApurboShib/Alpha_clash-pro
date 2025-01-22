@@ -12,10 +12,16 @@
 //     playgroundSction.classList.remove('hidden');
 // }
 
+function continueGame() {
+    // generate a random number.
+    const alpha = getRandonAlphabet();
+    console.log('Your Random Alphabet is : ', alpha);
+}
 
 function Play() {
     hideElementById('home-screen');
     show('play-ground');
+    continueGame();
 }
 
 
