@@ -61,3 +61,10 @@ function Play(){
     showElementById('play-ground');
     continueGame();
 }
+
+function ButtonPress () {
+    console.log('Button pressed');
+
+}
+// capure keyboard key press.
+document.addEventListener('keyup', ButtonPress);
