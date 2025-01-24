@@ -39,82 +39,90 @@
 //    return alphabewets;
 // }
 
+
+// function getARandomAlphabet() {
+//     // get or create an alphabet array
+//     const alphabetString = 'abcdefghijklmnopqrstuvwxyz';
+//     const alphabets = alphabetString.split('');
+//     // console.log(alphabets);
+
+//     // get a random index between 0 -25
+//     const randomNumber = Math.random() * 25;
+//     const index = Math.round(randomNumber);
+    
+//     const alphabet = alphabets[index];
+//     // console.log(index, alphabet);
+//     return alphabet;
+// }
+
+// function getARandomAlphabet() {
+//     // get or create an alphabet array
+//     const alphabetString = 'abcdefghijklmnopqrstuvwxyz';
+//     const alphabets = alphabetString.split('');
+//     // console.log(alphabets);
+
+//     // get a random index between 0 -25
+//     const randomNumber = Math.random() * 25;
+//     const index = Math.round(randomNumber);
+    
+//     const alphabet = alphabets[index];
+//     // console.log(index, alphabet);
+//     return alphabet;
+// }
+
+// Function to hide an element by adding the 'hidden' class
 function hideElementById(elementId) {
     const element = document.getElementById(elementId);
     element.classList.add('hidden');
 }
 
+// Function to show an element by removing the 'hidden' class
 function showElementById(elementId) {
     const element = document.getElementById(elementId);
     element.classList.remove('hidden');
 }
 
-function setBackgroundColorById(elementId){
+// Function to set the background color of an element to a specific class ('bg-orange-400')
+function setBackgroundColorById(elementId) {
     const element = document.getElementById(elementId);
     element.classList.add('bg-orange-400');
 }
 
-function removeBackgroundColorById(elementId){
+// Function to remove the background color class ('bg-orange-400') from an element
+function removeBackgroundColorById(elementId) {
     const element = document.getElementById(elementId);
     element.classList.remove('bg-orange-400');
 }
 
-
-function getTextElementValueById(elementId){
+// Function to get the integer value from the text content of an element by its ID
+function getTextElementValueById(elementId) {
     const element = document.getElementById(elementId);
     const elementValueText = element.innerText;
     const value = parseInt(elementValueText);
-    return value;
+    return value; // Returns the parsed integer value
 }
 
-function setTextElementValueById(elementId, value){
+// Function to set a new value as the text content of an element by its ID
+function setTextElementValueById(elementId, value) {
     const element = document.getElementById(elementId);
-    element.innerText = value;
+    element.innerText = value; // Updates the text content with the provided value
 }
 
-function getElementTextById(elementId){
+// Function to retrieve the text content of an element by its ID
+function getElementTextById(elementId) {
     const element = document.getElementById(elementId);
     const text = element.innerText;
-    return text;
+    return text; // Returns the text content
 }
 
-function getARandomAlphabet(){
-    const alphabetString = 'abcdefghijklmnopqrstuvwxyz';
-    const alphabets = alphabetString.split('');
+// Function to generate a random alphabet character
+function getARandomAlphabet() {
+    const alphabetString = 'abcdefghijklmnopqrstuvwxyz'; // String of lowercase alphabets
+    const alphabets = alphabetString.split(''); // Convert string into an array of alphabets
 
-    const randomNumber = Math.random()*25;
-    const index = Math.round(randomNumber);
+    const randomNumber = Math.random() * 25; // Generate a random number between 0 and 25
+    const index = Math.round(randomNumber); // Round to the nearest whole number
 
-    const alphabet = alphabets[index];
-    return alphabet;
+    const alphabet = alphabets[index]; // Get the alphabet at the random index
+    return alphabet; // Return the random alphabet
 }
-
-// function getARandomAlphabet() {
-//     // get or create an alphabet array
-//     const alphabetString = 'abcdefghijklmnopqrstuvwxyz';
-//     const alphabets = alphabetString.split('');
-//     // console.log(alphabets);
-
-//     // get a random index between 0 -25
-//     const randomNumber = Math.random() * 25;
-//     const index = Math.round(randomNumber);
-    
-//     const alphabet = alphabets[index];
-//     // console.log(index, alphabet);
-//     return alphabet;
-// }
-
-// function getARandomAlphabet() {
-//     // get or create an alphabet array
-//     const alphabetString = 'abcdefghijklmnopqrstuvwxyz';
-//     const alphabets = alphabetString.split('');
-//     // console.log(alphabets);
-
-//     // get a random index between 0 -25
-//     const randomNumber = Math.random() * 25;
-//     const index = Math.round(randomNumber);
-    
-//     const alphabet = alphabets[index];
-//     // console.log(index, alphabet);
-//     return alphabet;
-// }
